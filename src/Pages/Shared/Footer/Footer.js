@@ -10,7 +10,8 @@ const Footer = () => {
   <div>
   <h1 className="text-2xl font-bold text-white">Online <span className='text-gray-400'>Explore</span></h1> 
     
-    <Link to='/' className='text-white'>Bkash Cashback Offer</Link>
+    <p className='text-white'> Level-6, 15, Nawbab Solimula, Uttara, Dhaka</p>
+    <p>(Available : 10:00am to 07:00pm)</p>
 </div> 
 <div> 
     <Link to='/' className='text-white  font-semibold'>Home</Link>
