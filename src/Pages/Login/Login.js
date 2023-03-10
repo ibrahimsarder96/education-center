@@ -14,7 +14,7 @@ const Login = () => {
   </div>
 </div>
       </div>
-    <h1 class="">An animated element</h1>
+    
       <h1>This is login page</h1>
     </div>
   );
