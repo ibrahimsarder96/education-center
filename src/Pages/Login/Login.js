@@ -1,5 +1,11 @@
 import React from 'react';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import 'animate.css';
+import auth from '../../firebase.init';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import Loading from '../Shared/Loading/Loading';
+import { useForm } from 'react-hook-form';
+import { toast, ToastContainer } from 'react-toastify';
 const Login = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const [sendPasswordResetEmail] = useSendPasswordResetEmail(
@@ -12,15 +18,15 @@ const Login = () => {
     loading,
     error,
   ] = useSignInWithEmailAndPassword(auth);
-  const [token] = useToken(user || gUser);
+  // const [token] = useToken(user || gUser);
  
   const location = useLocation();
   const navigate = useNavigate();
   let from = location.state?.from?.pathname || "/";
 
-  if(token){
-    navigate(from, { replace: true });
-  }
+  // if(token){
+  //   navigate(from, { replace: true });
+  // }
   if(loading || gLoading){
     return <Loading></Loading>
   }
@@ -46,11 +52,9 @@ const Login = () => {
   }
   
   return (
-    <div>
-      <div>
-      <div className="animate__animated animate__zoomIn card w-96 bg-black shadow-xl">
- <div className="card h-screen justify-center items-center">
-  <div className='card w-100 bg-slate-200 shadow-2xl'>
+  
+ <div className="card h-full animate__animated animate__zoomIn card w-96 bg-black shadow-xl">
+  <div className='card w-96  shadow-2xl'>
   <div className="card-body w-96">
   <h2 className="text-center text-accent text-2xl font-bold">Login</h2>
   <form onSubmit={handleSubmit(onSubmit)}>
@@ -116,16 +120,14 @@ const Login = () => {
   <button 
    onClick={() => signInWithGoogle()}
   className="btn btn-outline bg-lime-500 text-white font-extrabold">
-    <img style={{width: '30px'}} src={google} alt="" />
+    {/* <img style={{width: '30px'}} src={google} alt="" /> */}
         <span className='px-2'>Continue With Google</span>
     </button>
     <ToastContainer />
   </div>
   </div>
 </div>
-</div>
-      </div>
-    </div>
+
   );
 };
 
