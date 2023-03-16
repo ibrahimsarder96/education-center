@@ -52,9 +52,9 @@ const Login = () => {
   }
   
   return (
-  
- <div className="card h-full animate__animated animate__zoomIn card w-96 bg-black shadow-xl">
-  <div className='card w-96  shadow-2xl'>
+  <div className='flex justify-center items-center'>
+    <div className="h-full  animate__animated animate__zoomIn card w-96 bg-black shadow-xl">
+  <div className='card  w-96  shadow-2xl'>
   <div className="card-body w-96">
   <h2 className="text-center text-accent text-2xl font-bold">Login</h2>
   <form onSubmit={handleSubmit(onSubmit)}>
@@ -65,7 +65,7 @@ const Login = () => {
         <input 
         type="email"
         placeholder="write your email"
-        className="input input-bordered bg-white shadow-2xl w-full max-w-xs"
+        className="input input-bordered bg-white text-black shadow-2xl w-full max-w-xs"
         {...register("email",{
           required: {
             value: true,
@@ -89,7 +89,7 @@ const Login = () => {
         <input 
         type="password" 
         placeholder="write your password" 
-        className="input input-bordered bg-white shadow-2xl w-full max-w-xs"
+        className="input input-bordered bg-white text-black shadow-2xl w-full max-w-xs"
         {...register("password",{
           required: {
             value: true,
@@ -110,7 +110,7 @@ const Login = () => {
       {signInError}
         <input className='btn hover:bg-slate-600 bg-orange-400 w-full max-w-xs uppercase orange-400 text-white font-extrabold' type='submit' value='Login'/>
     </form>
-    <p className='text-accent'>New Fashionova? <Link to="/signup" className='text-blue-400'>Create New Account</Link></p>
+    <p className='text-accent'>New OnlineExplore? <Link to="/signup" className='text-blue-400'>Create New Account</Link></p>
     <p className='text-accent'>Forget Password? <button onClick={resetPassword} variant='link' className='text-blue-400' >Reset Password</button></p>
     <div className="flex items-center justify-center ">
         <div className="h-1 bg-gray-300 w-28 rounded-md"></div>
@@ -127,6 +127,8 @@ const Login = () => {
   </div>
   </div>
 </div>
+  </div>
+ 
 
   );
 };
