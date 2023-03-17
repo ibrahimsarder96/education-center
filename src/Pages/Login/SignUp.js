@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading/Loading';
-
+import google from '../../assets/social/google.png';
 const SignUp = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth, {sendEmailVerification: true} );
   const { register, formState: { errors }, handleSubmit } = useForm();
@@ -18,12 +18,12 @@ const SignUp = () => {
   const [agree, setAgree] = useState(false);
   // const [token] = useToken(user || gUser);
   
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   // const location = useLocation();
   // let from = location.state?.from?.pathname || "/";
 
-  // if(token){
-  //   console.log(token)
+  // if(user || gUser){
+  //   console.log(user)
   //   navigate(from, { replace: true });
   // }
   if(loading || gLoading || updating){
@@ -37,7 +37,7 @@ const SignUp = () => {
   const onSubmit = async(data) =>{
     createUserWithEmailAndPassword(data.email, data.password);
     await updateProfile({ displayName: data.name});
-      // navigate('/home')
+      navigate('/home')
   };
   return (
     <div className="card h-screen justify-center items-center">
@@ -133,7 +133,7 @@ const SignUp = () => {
     <button 
      onClick={() => signInWithGoogle()}
     className="btn btn-outline bg-lime-500 text-white font-extrabold">
-    {/* <img style={{width: '30px'}} src={google} alt="" /> */}
+    <img style={{width: '30px'}} src={google} alt="" />
         <span className='px-2'>Continue With Google</span>
     </button>
     </div>
