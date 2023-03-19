@@ -5,7 +5,7 @@ const Footer = () => {
   const startYear = 2022;
   const currentYear = new Date().getFullYear()
   return (
-    <div>
+    <div className='bg-black'>
     <footer className="footer border-t border-blue-800  p-24  mt-32">
   <div>
   <h1 className="text-2xl font-bold text-white">Online <span className='text-gray-400'>Explore</span></h1> 
