@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Footer = () => {
   const startYear = 2022;
   const currentYear = new Date().getFullYear()
   return (
-    <div className='bg-black'>
-    <footer className="footer border-t border-blue-800  p-24  mt-32">
+    <div id='FooterW' className='bg-black'>
+    <footer className="footer  p-24  mt-32">
   <div>
   <h1 className="text-2xl font-bold text-white">Online <span className='text-gray-400'>Explore</span></h1> 
-    
     <p className='text-white'> Level-6, 15, Nawbab Solimula, Uttara, Dhaka</p>
-    <p>(Available : 10:00am to 07:00pm)</p>
+    <p className='text-white'>(Available : 10:00am to 07:00pm)</p>
 </div> 
 <div> 
     <Link to='/' className='text-white  font-semibold'>Home</Link>
@@ -28,12 +28,6 @@ const Footer = () => {
 </div>
 </footer> 
 <footer className="footer py-4  text-base-content border-base-300 px-24">
-<div className="md:place-self-center md:justify-self-end">
-  <h1 className='text-xl text-white font-bold'></h1>
-  <div className="">
-    
-  </div>
-</div>
 </footer>
 <p className='text-white  text-center pb-6'>Copyright © {currentYear} - All right reserved</p>
   </div>
