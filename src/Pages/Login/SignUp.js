@@ -37,17 +37,17 @@ const SignUp = () => {
   const onSubmit = async(data) =>{
     createUserWithEmailAndPassword(data.email, data.password);
     await updateProfile({ displayName: data.name});
-      navigate('/home')
+      navigate('/')
   };
   return (
     <div className="card h-screen justify-center items-center">
-    <div className='card w-100 animate__animated animate__zoomIn bg-black shadow-2xl'>
+    <div className='card w-100 animate__animated animate__fadeInUp bg-black shadow-2xl'>
     <div className="card-body w-96">
     <h2 className="text-center text-accent text-2xl font-bold">Sign UP</h2>
     <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-control w-full max-w-xs">
           <label className="label">
-            <span className="label-text">Name</span>
+            <span className="label-text text-white text-xl">Name</span>
           </label>
           <input 
           type="text" 
@@ -66,7 +66,7 @@ const SignUp = () => {
         </div>
           <div className="form-control w-full max-w-xs">
           <label className="label">
-            <span className="label-text">Email</span>
+            <span className="label-text text-white text-xl">Email</span>
           </label>
           <input 
           type="email" 
@@ -90,7 +90,7 @@ const SignUp = () => {
         </div>
           <div className="form-control w-full max-w-xs">
           <label className="label">
-            <span className="label-text">Password</span>
+            <span className="label-text text-white text-xl">Password</span>
           </label>
           <input 
           type="password" 
@@ -114,7 +114,7 @@ const SignUp = () => {
           </label>
         </div>
         <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-        <label className={`pl-2 ${agree ? ' ' : 'text-red-500'}`} htmlFor="terms">Accept OnlineExplore terms and Condition</label>
+        <label className={`pl-2 ${agree ? 'text-white ' : 'text-red-500'}`} htmlFor="terms">Accept OnlineExplore terms and Condition</label>
         {signInError}
           <input
           disabled={!agree} 
@@ -127,7 +127,7 @@ const SignUp = () => {
      
       <div className="flex items-center justify-center ">
         <div className="h-1 bg-gray-300 w-28 rounded-md"></div>
-        <div className="divider">OR</div>
+        <div className="divider text-white">OR</div>
         <div className="h-1 bg-gray-300 w-28 rounded-md"></div>
       </div>
     <button 

@@ -7,6 +7,7 @@ import Loading from '../Shared/Loading/Loading';
 import { useForm } from 'react-hook-form';
 import { toast, ToastContainer } from 'react-toastify';
 import google from '../../assets/social/google.png';
+import login from '../../assets/social/login.jpg';
 const Login = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const [sendPasswordResetEmail] = useSendPasswordResetEmail(
@@ -53,15 +54,17 @@ const Login = () => {
   }
   
   return (
-  <div className='flex justify-center items-center'>
-    <div className="h-full  animate__animated animate__zoomIn card w-96 bg-black shadow-xl">
+<div className="hero min-h-screen bg-base-100">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="card flex-shrink-0 w-full max-w-sm">
+    <div className="h-full  animate__animated animate__fadeInRight card w-96 bg-black shadow-xl">
   <div className='card  w-96  shadow-2xl'>
   <div className="card-body w-96">
   <h2 className="text-center text-accent text-2xl font-bold">Login</h2>
   <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control w-full max-w-xs">
         <label className="label">
-          <span className="label-text">Email</span>
+          <span className="label-text text-white text-xl">Email</span>
         </label>
         <input 
         type="email"
@@ -85,7 +88,7 @@ const Login = () => {
       </div>
         <div className="form-control w-full max-w-xs">
         <label className="label">
-          <span className="label-text">Password</span>
+          <span className="label-text text-white text-xl">Password</span>
         </label>
         <input 
         type="password" 
@@ -102,7 +105,6 @@ const Login = () => {
           }
         })}
         />
-       
         <label className="label">
         {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
       {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
@@ -115,7 +117,7 @@ const Login = () => {
     <p className='text-accent'>Forget Password? <button onClick={resetPassword} variant='link' className='text-blue-400' >Reset Password</button></p>
     <div className="flex items-center justify-center ">
         <div className="h-1 bg-gray-300 w-28 rounded-md"></div>
-        <div className="divider">OR</div>
+        <div className="divider text-white">OR</div>
         <div className="h-1 bg-gray-300 w-28 rounded-md"></div>
     </div>
   <button 
@@ -128,10 +130,14 @@ const Login = () => {
   </div>
   </div>
 </div>
+    </div>
+    <div className="animate__animated animate__fadeInLeft text-center lg:text-left">
+    <img style={{width: '800px'}} src={login} alt="" />
+      <p className="py-6">
+      </p>
+    </div>
   </div>
- 
-
+</div>
   );
 };
-
 export default Login;
