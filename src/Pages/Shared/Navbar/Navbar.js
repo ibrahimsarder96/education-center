@@ -20,7 +20,7 @@ const Navbar = () => {
           {menuItem}
         </ul>
       </div>
-      <Link to='/' className="text-3xl font-semibold">Online Explore</Link>
+      <Link to='/' className="text-3xl font-bold"><span className='text-purple-400 text-4xl'> O</span>nline <span className='text-purple-400'> Explore</span></Link>
     </div>
     <div className=" hidden lg:flex ">
     <ul className="menu menu-horizontal font-semibold p-0  ml-48">
