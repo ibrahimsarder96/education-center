@@ -7,10 +7,10 @@ import Loading from '../Shared/Loading/Loading';
 import { useForm } from 'react-hook-form';
 import { toast, ToastContainer } from 'react-toastify';
 import google from '../../assets/social/google.png';
-import login from '../../assets/social/login.jpg';
+import login from '../../assets/social/login.png';
 const Login = () => {
-  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-  const [sendPasswordResetEmail] = useSendPasswordResetEmail(
+const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+const [sendPasswordResetEmail] = useSendPasswordResetEmail(
     auth
   );
   const { register, formState: { errors }, handleSubmit } = useForm();
@@ -56,7 +56,7 @@ const Login = () => {
   return (
 <div className="hero min-h-screen bg-base-100">
   <div className="hero-content flex-col lg:flex-row-reverse">
-    <div className="card flex-shrink-0 w-full max-w-sm">
+    <div className="card  w-full max-w-sm">
     <div className="h-full  animate__animated animate__fadeInRight card w-96 bg-black shadow-xl">
   <div className='card  w-96  shadow-2xl'>
   <div className="card-body w-96">
@@ -131,8 +131,8 @@ const Login = () => {
   </div>
 </div>
     </div>
-    <div className="animate__animated animate__fadeInLeft text-center lg:text-left">
-    <img style={{width: '800px'}} src={login} alt="" />
+    <div className="animate__animated animate__fadeInLeft text-center flex-shrink-0 lg:text-left">
+    <img style={{width: '700px'}} src={login} alt="" />
       <p className="py-6">
       </p>
     </div>
