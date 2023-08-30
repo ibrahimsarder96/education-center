@@ -4,6 +4,7 @@ import CourseCategories from './CourseCategories';
 import Info from './Info';
 import Achieve from './Achieve';
 import Brand from './Brand';
+import CoreFeatures from './CoreFeatures';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <Banner></Banner>
       <Achieve></Achieve>
       <Brand></Brand>
+      <CoreFeatures></CoreFeatures>
       <Info></Info>
       <CourseCategories></CourseCategories>
     </div>
