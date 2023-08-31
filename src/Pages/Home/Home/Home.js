@@ -5,6 +5,8 @@ import Info from './Info';
 import Achieve from './Achieve';
 import Brand from './Brand';
 import CoreFeatures from './CoreFeatures';
+import LearningPlatFrom from './LearningPlatFrom';
+
 
 
 const Home = () => {
@@ -14,6 +16,7 @@ const Home = () => {
       <Achieve></Achieve>
       <Brand></Brand>
       <CoreFeatures></CoreFeatures>
+      <LearningPlatFrom></LearningPlatFrom>
       <Info></Info>
       <CourseCategories></CourseCategories>
     </div>
