@@ -37,11 +37,11 @@ const LearningPlatFrom = () => {
       </div>
       <div className='relative flex ml-24'>
         <div className='bg-white  h shadow-lg'>
-          <h4 className='absolute '>Demo Videos</h4>
-          <p className='absolute'>How Can You Start</p>
+          <video className='text-2xl text-black absolute' src='https://www.youtube.com/watch?v=i4laq6e_B6U&ab_channel=JhankarMahbub'>Playiodgklsdgjiewajmnklcx</video>
+         
         </div>
-        <img className='w-72 h-72'  src={img2} alt="mission" />
-        <img className='w-72 h-72 mt-56 ml-8' src={img1} alt="mission" />
+        <img className='w-72 h-72 rounded'  src={img2} alt="mission" />
+        <img className='w-72 h-72 mt-56 ml-8 rounded-md' src={img1} alt="mission" />
       </div>
     </section>
     </div>
