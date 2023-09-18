@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom';
 import img1 from '../../../assets/achieve/m.jpg';
 import img2 from '../../../assets/achieve/w.jpg';
 import { ImCheckboxChecked } from 'react-icons/im';
+import { MdSlowMotionVideo } from 'react-icons/md';
 import './LearningPlatFrom.css';
 const LearningPlatFrom = () => {
+
+  const handleVideo = () =>{
+      console.log('click')
+  }
   return (
     <div>
       <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-0 gap-4 mb-16 mt-16'>
@@ -34,8 +39,9 @@ const LearningPlatFrom = () => {
         </section>
       </div>
       <div className='relative lg:flex '>
-        <div  className='lg:mr-24'>
-         <h1 className='card text-black absolute'><span className='inline'>Demo Videos</span>How Can You Starts</h1>
+        <div  className='lg:mr-16 '>
+          <button onClick={handleVideo} className='card player absolute mt-8 z-10'><MdSlowMotionVideo></MdSlowMotionVideo></button>
+         <h1 id="card" className='card text-black absolute'><span className='inline'>Demo Videos</span>How Can You Starts</h1>
         </div>
         <img className='w-72 h-72 rounded lg:ml-0 ml-8'  src={img2} alt="mission" />
         <img className='w-72 h-72 mt-56 ml-8 rounded-md' src={img1} alt="mission" />

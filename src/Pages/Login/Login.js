@@ -55,9 +55,9 @@ const [sendPasswordResetEmail] = useSendPasswordResetEmail(
   
   return (
 <div className="hero min-h-screen bg-base-100">
-  <div className="hero-content flex-col lg:flex-row-reverse">
+  <div className="hero-content flex-col lg:flex-row-reverse justify-center items-center">
     <div className="card  w-full max-w-sm">
-    <div className="h-full  animate__animated animate__fadeInRight card w-96 bg-black shadow-xl">
+    <div className="h-full  animate__animated animate__fadeInRight card w-96 bg-black ">
   <div className='card  w-96  shadow-2xl'>
   <div className="card-body w-96">
   <h2 className="text-center text-accent text-2xl font-bold">Login</h2>

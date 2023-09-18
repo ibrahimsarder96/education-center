@@ -1,7 +1,12 @@
 .card{
   background-color: white;
   margin-top: 25%;
-  padding: 10px;
-  box-shadow:   white;
-
+  box-shadow: white;
+}
+#card{
+  padding: 20px;
+}
+.player{
+  color: orange;
+  font-size: 35px;
 }

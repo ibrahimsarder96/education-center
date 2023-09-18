@@ -7,7 +7,7 @@ const CoreFeatures = () => {
   return (
     <div className='mt-16 bg-gradient-to-br py-8 from-purple-100 to-blue-200 h-full rounded'>
       <h1 className='text-xl text-green-500 text-center font-bold'>Core Features</h1>
-      <h2 className='text-5xl font-bold text-center'>Why <span className='text-purple-600'>Choose</span>Edumim</h2>
+      <h2 className='text-5xl font-bold text-center'>Why <span className='text-purple-600'>Choose</span> Edumim</h2>
       <section className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-20 my-24 mx-8'>
         <div id='card-bg' className='bg-white  hover:bg-purple-600 hover:text-white  h-72 rounded'>
           <span id='icon' className=''>< AiOutlineGlobal /></span>
