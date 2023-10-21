@@ -54,12 +54,12 @@ const [sendPasswordResetEmail] = useSendPasswordResetEmail(
   }
   
   return (
-<div className="hero bg-base-100">
-  <div className="hero-content flex-col lg:flex-row-reverse">
+<div className="hero justify-center items-center lg:-mt-80 bg-base-100">
+  <div className="hero-content flex-col sm:flex-row-reverse">
     <div className="card w-full max-w-sm">
     <div className="card bg-black ">
-  <div className='card  w-96  shadow-2xl'>
-  <div className="card-body ">
+  <div className='card w-96  shadow-2xl'>
+  <div className="card-body">
   <h2 className="text-center text-accent text-2xl font-bold">Login</h2>
   <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control w-full max-w-xs">
@@ -131,7 +131,7 @@ const [sendPasswordResetEmail] = useSendPasswordResetEmail(
   </div>
 </div>
     </div>
-    <div className="animate__animated animate__fadeInLeft text-center flex-shrink-0 lg:text-left">
+    <div className="animate__animated animate__fadeInLeft text-center flex-shrink-0 lg:text-left mt-96">
     <img style={{width: '500px'}} src={login} alt="" />
     </div>
   </div>

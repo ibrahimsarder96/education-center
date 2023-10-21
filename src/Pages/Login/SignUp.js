@@ -40,12 +40,12 @@ const SignUp = () => {
       navigate('/')
   };
   return (
-    <div className="card justify-center items-center lg:mt-0 lg:pt-0">
-    <div className='card w-100 animate__animated animate__fadeInUp bg-black shadow-2xl'>
+    <div className="hero justify-center items-center">
+    <div className='card lg:mt-0 lg:pt-0 96 animate__animated animate__fadeInUp bg-black shadow-2xl'>
     <div className="card-body w-96">
     <h2 className="text-center text-accent text-2xl font-bold">Sign UP</h2>
     <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="form-control w-full ">
+          <div className="form-control w-full">
           <label className="label">
             <span className="label-text text-white text-xl">Name</span>
           </label>
