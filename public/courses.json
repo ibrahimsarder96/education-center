@@ -1,0 +1,102 @@
+[
+  {
+    "_id": 1,
+    "title": "Complete Web Developer Bootcamp",
+    "platform": "Udemy",
+    "instructor": "Colt Steele",
+    "duration": "45 hours",
+    "ratings": "4.5",
+    "price": 64.99,
+    "description": "Learn web development by building real projects with HTML, CSS, JavaScript, and more."
+  },
+  {
+    "_id": 2,
+    "title": "Full Stack Web Developer Nanodegree",
+    "platform": "Udacity",
+    "instructor": "Various",
+    "duration": "4-6 months",
+    "ratings": "4.5",
+    "price": 74.99,
+    "description": "Master both front-end and back-end development through practical projects and mentorship."
+  },
+  {
+    "_id": 3,
+    "title": "Introduction to Computer Science",
+    "platform": "edX",
+    "instructor": "David J. Malan",
+    "duration": "10-20 weeks",
+    "ratings": "4.5",
+    "price": 99.99,
+    "description": "Harvard University introduction to computer science, covering algorithms, data structures, and more."
+  },
+  {
+    "_id": 4,
+    "title": "Machine Learning",
+    "platform": "Coursera",
+    "instructor": "Andrew Ng",
+    "duration": "11 weeks",
+    "ratings": "4.5",
+    "price": 44.99,
+    "description": "A foundational course in machine learning using Python and Octave."
+  },
+  {
+    "_id": 5,
+    "title": "The Web Developer Bootcamp",
+    "platform": "Udemy",
+    "instructor": "Colt Steele",
+    "duration": "50.5 hours",
+    "ratings": "4.5",
+    "price": 64.99,
+    "description": "Comprehensive web development course covering HTML, CSS, JavaScript, Node.js, and more."
+  },
+  {
+    "_id": 6,
+    "title": "Python for Data Science and Machine Learning Bootcamp",
+    "platform": "Udemy",
+    "instructor": "Jose Portilla",
+    "duration": "25.5 hours",
+    "ratings": "4.5",
+    "price": 64.99,
+    "description": "Learn Python for data analysis, data visualization, and machine learning."
+  },
+  {
+    "_id": 7,
+    "title": "Data Science Specialization",
+    "platform": "Coursera",
+    "instructor": "Various",
+    "duration": "Approx. 8-12 months",
+    "ratings": "4.5",
+    "price": 77.99,
+    "description": "A series of courses covering data science, including R programming, data analysis, and machine learning."
+  },
+  {
+    "_id": 8,
+    "title": "Advanced JavaScript and ES6",
+    "platform": "Udemy",
+    "instructor": "Brad Traversy",
+    "duration": "9.5 hours",
+    "ratings": "4.5",
+    "price": 88.99,
+    "description": "Master JavaScript, including ES6 and asynchronous programming."
+  },
+  {
+    "_id": 9,
+    "title": "Software Engineering Fundamentals",
+    "platform": "edX",
+    "instructor": "Various",
+    "duration": "5-7 weeks",
+    "ratings": "4.5",
+    "price": 99.99,
+    "description": "A course covering the fundamentals of software engineering and development processes."
+  },
+  {
+    "_id": 10,
+    "title": "Deep Learning Specialization",
+    "platform": "Coursera",
+    "instructor": "Andrew Ng",
+    "duration": "Approx. 3-4 months",
+    "ratings": "4.5",
+    "price": 64.99,
+    "description": "A series of courses covering deep learning, neural networks, and structuring machine learning projects."
+  }
+]
