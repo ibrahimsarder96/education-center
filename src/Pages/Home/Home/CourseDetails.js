@@ -3,7 +3,6 @@ import './CourseDetails.css';
 import { Link } from 'react-router-dom';
 const CourseDetails = ({course}) => {
   const {title, instructor, price, ratings} = course;
-  console.log(title)
   return (
     <div>
       <div id='bg' className="card w-full">
