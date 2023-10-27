@@ -30,7 +30,7 @@ const StudentFeedback = () => {
         key={review.id}
         >
           <div className='mx-20'>
-            <div className='flex items-center justify-start'>
+            <div className='flex items-center justify-center'>
             <div className="avatar">
               <div className="w-24 rounded-full">
                 <img className='' src={review.img} alt="" />
