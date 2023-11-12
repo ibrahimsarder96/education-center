@@ -20,8 +20,8 @@ const BannerItem = ({slider}) => {
       <div className="absolute flex justify-start transform -translate-y-1/2 left-5 top-3/4">
         <Link to='/'><button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-gray-400 font-medium rounded-lg text-semibold px-8 py-5 text-center mr-2 mb-2">Explore more</button></Link>
       </div>
-      <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-        <a href={`#slide${prev}`} className="btn btn-circle mr-5">❮</a> 
+      <div className="flex absolute justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">
+        <a href={`#slide${prev}`} className="btn btn-circle mr-5">❮</a>
         <a href={`#slide${next}`} className="btn btn-circle">❯</a>
       </div>
     </div> 

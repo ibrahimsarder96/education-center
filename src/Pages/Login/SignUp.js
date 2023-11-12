@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading/Loading';
 import google from '../../assets/social/google.png';
 const SignUp = () => {
-  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth, {sendEmailVerification: true} );
+  const [signInWithGoogle, gLoading, gError] = useSignInWithGoogle(auth, {sendEmailVerification: true} );
   const { register, formState: { errors }, handleSubmit } = useForm();
   const [
     createUserWithEmailAndPassword,
-    user,
     loading,
     error,
   ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
@@ -114,7 +113,7 @@ const SignUp = () => {
           </label>
         </div>
         <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-        <label className={`pl-2 ${agree ? 'text-white ' : 'text-red-500'}`} htmlFor="terms">Accept OnlineExplore terms and Condition</label>
+        <label className={`pl-2 ${agree ? 'text-green-400' : 'text-red-500'}`} htmlFor="terms">Accept OnlineExplore terms and Condition</label>
         {signInError}
           <input
           disabled={!agree} 

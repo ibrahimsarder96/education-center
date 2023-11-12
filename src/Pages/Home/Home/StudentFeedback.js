@@ -37,7 +37,7 @@ const StudentFeedback = () => {
               </div>
             </div>
             <h1 className='text-2xl font-bold text-red-400 ml-6'>{review.name}</h1>
-            </div>
+            </div> 
             <p className='mt-5'>{review.details}</p>
           </div>
         </SwiperSlide>)
