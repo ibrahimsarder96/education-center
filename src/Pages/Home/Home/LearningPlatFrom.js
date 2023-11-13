@@ -5,8 +5,8 @@ import img2 from '../../../assets/achieve/w.jpg';
 import { ImCheckboxChecked } from 'react-icons/im';
 import { MdSlowMotionVideo } from 'react-icons/md';
 import './LearningPlatFrom.css';
-const LearningPlatFrom = () => {
 
+const LearningPlatFrom = () => {
   const handleVideo = () =>{
       console.log('click')
   }
@@ -38,9 +38,11 @@ const LearningPlatFrom = () => {
         <Link to='/'><button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 dark:focus:ring-gray-400 font-medium rounded-lg text-semibold px-8 py-5 text-center mr-2 mb-2 mt-10">Explore Our Courses</button></Link>
         </section>
       </div>
-      <div className='relative lg:flex '>
+      <div className='relative lg:flex'>
         <div  className='lg:mr-16 '>
-          <button onClick={handleVideo} className='card player absolute mt-8 z-10'><MdSlowMotionVideo></MdSlowMotionVideo></button>
+        <MdSlowMotionVideo> <video width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</video></MdSlowMotionVideo>
          <h1 id="card" className='card text-black absolute'><span className='inline'>Demo Videos</span>How Can You Starts</h1>
         </div>
         <img className='w-72 h-72 rounded lg:ml-0 ml-8'  src={img2} alt="mission" />
