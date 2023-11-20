@@ -40,13 +40,13 @@ const SignUp = () => {
   };
   return (
     <div className="hero justify-center items-center">
-    <div className='card lg:mt-0 lg:pt-0 96 animate__animated animate__fadeInUp bg-black shadow-2xl'>
+    <div className='card lg:mt-36 lg:pt-0 animate__animated animate__fadeInUp bg-black shadow-2xl'>
     <div className="card-body w-96">
     <h2 className="text-center text-accent text-2xl font-bold">Sign UP</h2>
     <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-control w-full">
           <label className="label">
-            <span className="label-text text-white text-xl">Name</span>
+            <span className="label-text text-white text-xl"><span className='text-red-500 text-2xl font-bold'>*</span> Name</span>
           </label>
           <input 
           type="text" 
@@ -65,7 +65,7 @@ const SignUp = () => {
         </div>
           <div className="form-control w-full max-w-xs">
           <label className="label">
-            <span className="label-text text-white text-xl">Email</span>
+            <span className="label-text text-white text-xl"><span className='text-red-500 text-2xl font-bold'>*</span> Email</span>
           </label>
           <input 
           type="email" 
@@ -89,7 +89,7 @@ const SignUp = () => {
         </div>
           <div className="form-control w-full max-w-xs">
           <label className="label">
-            <span className="label-text text-white text-xl">Password</span>
+            <span className="label-text text-white text-xl"><span className='text-red-500 text-2xl font-bold'>*</span> Password</span>
           </label>
           <input 
           type="password" 

@@ -7,6 +7,7 @@ import Brand from './Brand';
 import CoreFeatures from './CoreFeatures';
 import LearningPlatFrom from './LearningPlatFrom';
 import StudentFeedback from './StudentFeedback';
+import CollectInformation from './CollectInformation';
 
 
 
@@ -20,6 +21,7 @@ const Home = () => {
       <LearningPlatFrom></LearningPlatFrom>
       <Info></Info>
       <CourseCategories></CourseCategories>
+      <CollectInformation></CollectInformation>
       <StudentFeedback></StudentFeedback>
     </div>
   );

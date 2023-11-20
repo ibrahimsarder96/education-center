@@ -1,45 +1,15 @@
-.card{
-  background-color: white;
-  margin-top: 25%;
-  box-shadow: white;
-}
-#card{
-  padding: 20px;
-}
-.player{
-  color: orange;
-  font-size: 35px;
-}
-.loader {
-  width: 48px;
-  height: 48px;
-  display: inline-block;
-  position: relative;
-}
-.loader::after,
-.loader::before {
-  content: '';  
-  box-sizing: border-box;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #FFF;
-  position: absolute;
-  left: 0;
-  top: 0;
-  animation: animloader 2s linear infinite;
-}
-.loader::after {
-  animation-delay: 1s;
-}
 
-@keyframes animloader {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
+/*---------------- mobile device ----------------*/
+@media only screen and (max-width: 600px) {
+ .header{
+  text-align: center;
+ }
+ .icon span{
+  margin-left: 15px;
+ }
+.video-container{
+  display: none;
+  /* max-width: 100%;
+  height: auto; */
+}
 }

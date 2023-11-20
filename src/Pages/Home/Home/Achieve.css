@@ -1,0 +1,33 @@
+
+
+/*---------------- mobile device ----------------*/
+@media only screen and (max-width: 600px) {
+  #firstHead{
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #secondHead{
+    text-align: center;
+  }
+  #third{
+    text-align: center;
+  }
+  #info{
+   padding: 0px 20px;
+   display: block;
+   width: 100%;
+  }
+  .box img{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box h3, p{
+    padding: 0px 20px;
+  }
+  .md-btn{
+    margin-left: 3rem;
+  }
+}

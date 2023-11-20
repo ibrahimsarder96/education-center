@@ -18,7 +18,7 @@ const StudentFeedback = () => {
   return (
     
       <section className='my-24'>
-       <h1 className='text-2xl font-bold text-center text-purple-600'>Student Feedback</h1>
+       <h1 className='text-4xl font-bold text-center text-primary'>Success_ Story</h1>
        <Swiper
         navigation={true}
         modules={[Navigation]}
